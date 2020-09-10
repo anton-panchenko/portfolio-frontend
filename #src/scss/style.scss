@@ -1,0 +1,41 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@import 'fonts';
+@import "reset";
+
+/*-------------------------*/
+/*-----------APP-----------*/
+/*-------------------------*/
+
+.app{
+    font-family: 'Raleway', sans-serif;
+}
+
+.section_title{
+    &__img{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px 0;
+    }
+    &__text{
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #6c7988;
+    }
+}
+
+@import "header";
+@import "about";
+
+@import "buttons";
+@import "media";

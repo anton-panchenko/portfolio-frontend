@@ -1,0 +1,25 @@
+/*-------------------------*/
+/*----------ABOUT----------*/
+/*-------------------------*/
+
+.about{
+  padding: 75px 0 75px 0;
+  background-color: #ffffff;
+  &_content{}
+  &_facts{
+    &__title{}
+    &__items{
+      &_item{
+        &__title{}
+        &__content{}
+      }
+    }
+  }
+  &_description{
+    &__title{}
+    &__text{
+      &_first{}
+      &_second{}
+    }
+  }
+}
