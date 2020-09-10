@@ -31,11 +31,38 @@
         line-height: 30px;
         font-weight: 700;
         color: #6c7988;
+        margin: 0 0 50px 0;
+    }
+}
+
+.btn{
+    margin: 0 15px 0 15px;
+    width: 170px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+.btn-dark{
+    color: #fffefe;
+    background-color: #6c7988;
+    &:hover{
+        color: #ffffff;
+        background-color: #a3c5c3;
+    }
+}
+.btn-light{
+    color: #224256;
+    background-color: #f5f5f5;
+    &:hover{
+        color: #ffffff;
+        background-color: #6c7988;
     }
 }
 
 @import "header";
 @import "about";
 
-@import "buttons";
 @import "media";
