@@ -9,6 +9,7 @@
 }
 
 @import 'fonts';
+@import 'fontello';
 @import "reset";
 
 /*-------------------------*/
@@ -35,6 +36,13 @@
     }
 }
 
+.section_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px 15px 15px;
+}
+
 .btn{
     margin: 0 15px 0 15px;
     width: 170px;
@@ -44,6 +52,8 @@
     border-radius: 50px;
     transition: all 0.5s ease-in-out;
     text-align: center;
+    border: none;
+    cursor: pointer;
 }
 .btn-dark{
     color: #fffefe;
@@ -54,7 +64,7 @@
     }
 }
 .btn-light{
-    color: #224256;
+    color: #6c7988;
     background-color: #f5f5f5;
     &:hover{
         color: #ffffff;
@@ -62,9 +72,12 @@
     }
 }
 
-@import "menu_fixed";
+@import "fixed_els";
 @import "header";
 @import "about";
 @import "resume";
+@import "works";
+@import "blog";
+@import "contacts";
 
 @import "media";

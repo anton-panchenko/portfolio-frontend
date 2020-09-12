@@ -1,0 +1,31 @@
+/*-------------------------*/
+/*-----------WORKS---------*/
+/*-------------------------*/
+
+.works{
+  background-color: #ffffff;
+  padding: 75px 0 75px 0;
+  &_filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item{
+      cursor: pointer;
+      color: #6c7988;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 48px;
+      transition: all 0.5s ease-in-out;
+      padding: 0 10px 0 10px;
+      &:hover{
+        color: #a3c5c3;
+      }
+      &.active{
+        border-bottom: 1px solid #a3c5c3;
+      }
+    }
+  }
+  &_gallery{
+    margin: 20px 0 20px 0;
+  }
+}
