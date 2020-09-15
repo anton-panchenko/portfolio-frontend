@@ -3,7 +3,7 @@
 // --------------------------
 
 let linkNav = document.querySelectorAll('[href^="#"]'),
-    V = 0.5;
+    V = 0.2;
 for (let i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) {
         e.preventDefault();
