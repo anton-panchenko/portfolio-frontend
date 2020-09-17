@@ -36,29 +36,7 @@ let pagePreloader = document.querySelector('#pagePreloader');
 setTimeout(() => {
     pagePreloader.style.display = 'none';
     app.style.display = 'block';
-}, 2000);
-
-// ----------------------------
-//       progress bar
-// ----------------------------
-
-let progressBars = document.querySelectorAll('.resume_content__item_progress__up');
-let isScrolled = false;
-
-// setInterval(() => {
-//     if (progressBars[0].getBoundingClientRect().top > 10 && !isScrolled) {
-//         console.log('in');
-//         progressBars.forEach(pb => {
-//             pb.style.width += '5px';
-//             if (pb.getAttribute('data-value') === pb.style.width) isScrolled = true;
-//         });
-    }
-    // progressBars.forEach(pb => {
-    //     pb.addEventListener('scroll', () => {
-    //
-    //     });
-    // });
-// }, 20);
+}, 1500);
 
 // --------------------------
 //     modal self photo
@@ -88,8 +66,12 @@ let scrollToTop = document.querySelector('#scrollToTop');
 let fixedMenu = document.querySelector('.fixed_menu');
 let fixedMenuItems = document.querySelectorAll('.fixed_menu__item');
 let sections = document.querySelectorAll('.section');
+let progressBars = document.querySelectorAll('.resume_content__item_progress__up');
+let isScrolled = false;
 
 window.addEventListener('scroll', () => {
+
+    // button scroll to top
     if (window.pageYOffset > 400) {
         scrollToTop.classList.add('active');
         fixedMenu.classList.add('active');
@@ -98,6 +80,7 @@ window.addEventListener('scroll', () => {
         fixedMenu.classList.remove('active');
     }
 
+    // change activity of fixed menu items
     sections.forEach(e => {
         if (e.getBoundingClientRect().top > -500 && e.getBoundingClientRect().top < 500) {
             fixedMenuItems.forEach(fmi => {
@@ -110,6 +93,29 @@ window.addEventListener('scroll', () => {
             });
         }
     });
+
+    // start animation of progress bars on section resume
+    if (progressBars[0].getBoundingClientRect().top < 600 && !isScrolled) {
+        isScrolled = true;
+        progressBars.forEach(pb => move(pb));
+    }
+
 });
 
+// ----------------------------
+//      move progress bar
+// ----------------------------
 
+function move(elem) {
+    let width = 1;
+    let id = setInterval(frame, 10);
+    let max = elem.getAttribute('data-value');
+    function frame() {
+        if (width >= max) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+        }
+    }
+}
