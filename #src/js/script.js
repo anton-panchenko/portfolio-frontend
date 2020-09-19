@@ -10,7 +10,7 @@ let pagePreloader = document.querySelector('#pagePreloader');
 setTimeout(() => {
     pagePreloader.style.display = 'none';
     app.style.display = 'block';
-}, 1500);
+}, 1000);
 
 // --------------------------
 //     modal self photo
@@ -55,18 +55,11 @@ filterBtns.forEach(fb => {
     });
 });
 
-// let clickOnAll = new Event("click");
-// filterBtns[1].dispatchEvent(clickOnAll);
-
-// let btnAll = document.querySelector('#btnAll');
-// btnAll.dispatchEvent(clickOnAll);
-
-
 // ----------------------------
 //      move progress bar
 // ----------------------------
 
-function move(elem) {
+let move = function (elem) {
     let width = 1;
     let id = setInterval(frame, 10);
     let max = elem.getAttribute('data-value');
@@ -90,6 +83,8 @@ let fixedMenuItems = document.querySelectorAll('.fixed_menu__item');
 let sections = document.querySelectorAll('.section');
 let progressBars = document.querySelectorAll('.resume_content__item_progress__up');
 let isScrolled = false;
+
+setInterval(() => isScrolled = true, 60000);
 
 window.addEventListener('scroll', () => {
 

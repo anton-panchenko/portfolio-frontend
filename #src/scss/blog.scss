@@ -5,4 +5,68 @@
 .blog{
   background-color: #f9fafa;
   padding: 75px 0 75px 0;
+  &_gallery{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    &__item{
+      width: 400px;
+      margin: 15px;
+      &_header{
+        &__tags{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          color: #6c7988;
+          font-size: 14px;
+          font-weight: 400;
+          a{
+            margin: 0 20px 0 0;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+              color: #a3c5c3;
+            }
+          }
+        }
+        &__title{
+          height: 70px;
+          color: #6c7988;
+          line-height: 34px;
+          font-size: 24px;
+          font-weight: 700;
+          transition: all 0.5s ease-in-out;
+          &:hover{
+            color: #a3c5c3;
+          }
+        }
+      }
+      &_img{
+        background-color: #e0e6e9;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 200px;
+          height: 200px;
+        }
+      }
+      &_footer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &__date{
+          color: #6c7988;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 30px;
+          transition: all 0.5s ease-in-out;
+          &:hover{
+            color: #a3c5c3;
+          }
+        }
+      }
+    }
+  }
 }
