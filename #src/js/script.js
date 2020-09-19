@@ -16,21 +16,25 @@ setTimeout(() => {
 //     modal self photo
 // --------------------------
 
-let modal = document.querySelector('#my_modal');
-let btn = document.querySelector('#btn_modal_window');
-let closeBtn = document.querySelector('.modal_content__photo_closeBtn');
+if (document.querySelector('#my_modal')) {
+    let modal = document.querySelector('#my_modal');
+    let btn = document.querySelector('#btn_modal_window');
+    let closeBtn = document.querySelector('.modal_content__photo_closeBtn');
 
-btn.addEventListener('click', () => {
-    modal.style.display = "block";
-});
-closeBtn.addEventListener('click', () => {
-    modal.style.display = "none";
-});
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
+    btn.addEventListener('click', () => {
+        modal.style.display = "block";
+    });
+    closeBtn.addEventListener('click', () => {
         modal.style.display = "none";
-    }
-});
+    });
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+}
+
+
 
 // ----------------------------
 //      works gallery
@@ -98,23 +102,27 @@ window.addEventListener('scroll', () => {
     }
 
     // change activity of fixed menu items
-    sections.forEach(e => {
-        if (e.getBoundingClientRect().top > -500 && e.getBoundingClientRect().top < 500) {
-            fixedMenuItems.forEach(fmi => {
-                fmi.classList.remove('active');
-            });
-            fixedMenuItems.forEach(fmi => {
-                if (fmi.getAttribute('data-menu') === e.getAttribute('data-menu')) {
-                    fmi.classList.add('active');
-                }
-            });
-        }
-    });
+    if (document.querySelectorAll('.section')) {
+        sections.forEach(e => {
+            if (e.getBoundingClientRect().top > -500 && e.getBoundingClientRect().top < 500) {
+                fixedMenuItems.forEach(fmi => {
+                    fmi.classList.remove('active');
+                });
+                fixedMenuItems.forEach(fmi => {
+                    if (fmi.getAttribute('data-menu') === e.getAttribute('data-menu')) {
+                        fmi.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
 
     // start animation of progress bars on section resume
-    if (progressBars[0].getBoundingClientRect().top < 600 && !isScrolled) {
-        isScrolled = true;
-        progressBars.forEach(pb => move(pb));
+    if (progressBars[0]) {
+        if (progressBars[0].getBoundingClientRect().top < 600 && !isScrolled) {
+            isScrolled = true;
+            progressBars.forEach(pb => move(pb));
+        }
     }
 
 });
