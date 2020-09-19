@@ -1,4 +1,4 @@
-// --------------------------
+// // --------------------------
 //           scroll
 // --------------------------
 
@@ -59,6 +59,54 @@ window.addEventListener('click', (e) => {
 });
 
 // ----------------------------
+//      works gallery
+// ----------------------------
+
+let iso = new Isotope('#grid', {
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows',
+    filter: '*',
+    transitionDuration: '0.6s',
+    percentPosition: true
+});
+
+let filterBtns = document.querySelectorAll('.filter-btn');
+filterBtns.forEach(fb => {
+    fb.addEventListener('click', event => {
+        event.preventDefault();
+        let filterData = fb.getAttribute('data-filter');
+        iso.arrange({
+            filter: filterData
+        });
+    });
+});
+
+// let clickOnAll = new Event("click");
+// filterBtns[1].dispatchEvent(clickOnAll);
+
+// let btnAll = document.querySelector('#btnAll');
+// btnAll.dispatchEvent(clickOnAll);
+
+
+// ----------------------------
+//      move progress bar
+// ----------------------------
+
+function move(elem) {
+    let width = 1;
+    let id = setInterval(frame, 10);
+    let max = elem.getAttribute('data-value');
+    function frame() {
+        if (width >= max) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+        }
+    }
+}
+
+// ----------------------------
 //       scroll settings
 // ----------------------------
 
@@ -101,21 +149,3 @@ window.addEventListener('scroll', () => {
     }
 
 });
-
-// ----------------------------
-//      move progress bar
-// ----------------------------
-
-function move(elem) {
-    let width = 1;
-    let id = setInterval(frame, 10);
-    let max = elem.getAttribute('data-value');
-    function frame() {
-        if (width >= max) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + '%';
-        }
-    }
-}
