@@ -38,24 +38,24 @@
   }
 }
 
-.scrollToTop{
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  font-size: 20px;
-  position: fixed;
-  bottom: 50px;
-  right: 10px;
-  display: none;
-  color: #ffffff;
-  border-radius: 50%;
-  background-color: #d4dbdf;
-  transition: all 0.5s ease-in-out;
-  &:hover{
-    background-color: #a3c5c3;
-  }
-  &.active{
-    display: flex;
-  }
-}
+//.scrollToTop{
+//  justify-content: center;
+//  align-items: center;
+//  width: 48px;
+//  height: 48px;
+//  font-size: 20px;
+//  position: fixed;
+//  bottom: 50px;
+//  right: 10px;
+//  display: none;
+//  color: #ffffff;
+//  border-radius: 50%;
+//  background-color: #d4dbdf;
+//  transition: all 0.5s ease-in-out;
+//  &:hover{
+//    background-color: #a3c5c3;
+//  }
+//  &.active{
+//    display: flex;
+//  }
+//}

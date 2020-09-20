@@ -986,7 +986,7 @@ textarea {
 
 /*-------------------------*/
 
-.scroll_to_top {
+.scrollToTop {
   justify-content: center;
   align-items: center;
   width: 48px;
@@ -1002,11 +1002,11 @@ textarea {
   transition: all 0.5s ease-in-out;
 }
 
-.scroll_to_top:hover {
+.scrollToTop:hover {
   background-color: #a3c5c3;
 }
 
-.scroll_to_top.active {
+.scrollToTop.active {
   display: flex;
 }
 
@@ -1146,30 +1146,6 @@ textarea {
 .head_menu.active {
   top: 0;
   transition: all 0.5s ease-in-out;
-}
-
-.scrollToTop {
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  font-size: 20px;
-  position: fixed;
-  bottom: 50px;
-  right: 10px;
-  display: none;
-  color: #ffffff;
-  border-radius: 50%;
-  background-color: #d4dbdf;
-  transition: all 0.5s ease-in-out;
-}
-
-.scrollToTop:hover {
-  background-color: #a3c5c3;
-}
-
-.scrollToTop.active {
-  display: flex;
 }
 
 .blogPage {
