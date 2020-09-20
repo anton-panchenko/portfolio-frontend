@@ -6,7 +6,7 @@ let linkNav = document.querySelectorAll('[href^="#"]'),
     V = 0.2;
 for (let i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         let w = window.pageYOffset,
             hash = this.href.replace(/[^#]*(.*)/, '$1');
             t = document.querySelector(hash).getBoundingClientRect().top,

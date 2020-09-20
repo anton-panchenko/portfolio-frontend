@@ -6,7 +6,7 @@ let linkNav = document.querySelectorAll('[href^="#"]'),
     V = 0.2;
 for (let i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         let w = window.pageYOffset,
             hash = this.href.replace(/[^#]*(.*)/, '$1');
             t = document.querySelector(hash).getBoundingClientRect().top,
@@ -42,11 +42,11 @@ setTimeout(() => {
 //     modal self photo
 // --------------------------
 
-if (document.querySelector('#my_modal')) {
-    let modal = document.querySelector('#my_modal');
-    let btn = document.querySelector('#btn_modal_window');
-    let closeBtn = document.querySelector('.modal_content__photo_closeBtn');
+let modal = document.querySelector('#my_modal');
+let btn = document.querySelector('#btn_modal_window');
+let closeBtn = document.querySelector('.modal_content__photo_closeBtn');
 
+if (modal) {
     btn.addEventListener('click', () => {
         modal.style.display = "block";
     });
@@ -66,24 +66,26 @@ if (document.querySelector('#my_modal')) {
 //      works gallery
 // ----------------------------
 
-let iso = new Isotope('#grid', {
-    itemSelector: '.grid-item',
-    layoutMode: 'fitRows',
-    filter: '*',
-    transitionDuration: '0.6s',
-    percentPosition: true
-});
-
 let filterBtns = document.querySelectorAll('.filter-btn');
-filterBtns.forEach(fb => {
-    fb.addEventListener('click', event => {
-        event.preventDefault();
-        let filterData = fb.getAttribute('data-filter');
-        iso.arrange({
-            filter: filterData
+
+if (filterBtns[0]) {
+    let iso = new Isotope('#grid', {
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        filter: '*',
+        transitionDuration: '0.6s',
+        percentPosition: true
+    });
+    filterBtns.forEach(fb => {
+        fb.addEventListener('click', event => {
+            event.preventDefault();
+            let filterData = fb.getAttribute('data-filter');
+            iso.arrange({
+                filter: filterData
+            });
         });
     });
-});
+}
 
 // ----------------------------
 //      move progress bar
@@ -101,7 +103,7 @@ let move = function (elem) {
             elem.style.width = width + '%';
         }
     }
-}
+};
 
 // ----------------------------
 //       scroll settings
@@ -128,7 +130,7 @@ window.addEventListener('scroll', () => {
     }
 
     // change activity of fixed menu items
-    if (document.querySelectorAll('.section')) {
+    if (sections[0]) {
         sections.forEach(e => {
             if (e.getBoundingClientRect().top > -500 && e.getBoundingClientRect().top < 500) {
                 fixedMenuItems.forEach(fmi => {
