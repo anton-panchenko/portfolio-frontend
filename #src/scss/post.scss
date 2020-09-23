@@ -1,16 +1,17 @@
 .post{
   background-color: #f9fafa;
   padding: 75px 0 75px 0;
+  color: #6c7988;
   &_wrap{
     width: 800px;
     margin: 0 auto;
   }
   &_header{
+    margin: 0 0 20px 0;
     &__tags{
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      color: #6c7988;
       font-size: 14px;
       font-weight: 400;
       a{
@@ -23,7 +24,6 @@
     }
     &__title{
       height: 40px;
-      color: #6c7988;
       line-height: 34px;
       font-size: 24px;
       font-weight: 700;
@@ -49,7 +49,6 @@
       justify-content: space-between;
       align-items: center;
       &_date{
-        color: #6c7988;
         font-size: 14px;
         font-weight: 700;
         line-height: 30px;
@@ -59,7 +58,6 @@
         }
       }
       &_author{
-        color: rgb(108, 121, 136);
         transition: all 0.5s ease-in-out 0s;
         font-size: 14px;
         font-weight: 400;
@@ -70,7 +68,6 @@
       }
     }
     &__comments{
-      color: #6c7988;
       font-size: 14px;
       font-weight: 400;
       transition: all 0.5s ease-in-out;
@@ -80,15 +77,147 @@
     }
   }
   &_body{
-    &__text{}
-    &__quote{}
-    &__img{
-      &_description{}
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(108, 121, 136, 0.2);
+    &__text{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      margin: 0 0 10px;
     }
-    &__subtitle{}
-    &__list{}
+    &__quote{
+      text-align: center;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 30px;
+      padding: 0 60px 30px;
+      margin: 0 0 10px;
+    }
+    &__img{
+      background-color: #e0e6e9;
+      width: 800px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 400px;
+        height: 400px;
+      }
+      &_description{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: right;
+        margin: 0 0 10px;
+      }
+    }
+    &__subtitle{
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    &__list{
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      &_item{
+        padding: 0 0 10px 35px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        list-style-type: none;
+        &::before{
+          content: "";
+          display: inline-block;
+          position: relative;
+          top: -3px;
+          left: -20px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: #6c7988;
+        }
+      }
+    }
   }
-  &_links{}
+  &_links{
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 26px;
+      padding: 5px 0;
+      transition: all 0.5s ease-in-out;
+      &:hover{
+        color: #a3c5c3;
+      }
+      p{
+        margin: 0 5px;
+      }
+    }
+  }
   &_comments{}
-  &_form{}
+  &_form{
+    &__title{
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &__item{
+      .input-text{
+        border-bottom: 1px solid #6c7988;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 15px;
+        color: #6c7988;
+        height: 30px;
+        outline: none;
+        transition: all 0.5s ease-in-out;
+        padding: 1px 2px;
+        &:hover{
+          border: none;
+          border-bottom: 1px solid #a3c5c3;
+          outline: none;
+        }
+      }
+      .input-textarea{
+        border-bottom: 1px solid #6c7988;
+        width: 100%;
+        color: #6c7988;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 15px;
+        resize: none;
+        outline: none;
+        height: 80px;
+        background-color: transparent;
+        transition: all 0.5s ease-in-out;
+        overflow: auto;
+        &:hover{
+          border: none;
+          border-bottom: 1px solid #a3c5c3;
+          outline: none;
+        }
+      }
+      .btn{
+        margin: 0 0 0 0;
+      }
+    }
+  }
 }
