@@ -1,3 +1,4 @@
+
 // @@include('scroll.js')
 
 // ----------------------------
@@ -10,7 +11,24 @@ let pagePreloader = document.querySelector('#pagePreloader');
 setTimeout(() => {
     pagePreloader.style.display = 'none';
     app.style.display = 'block';
+    followTheLink();
 }, 1000);
+
+let followTheLink = function () {
+    let link = localStorage.getItem('link');
+    console.log(link);
+    let a = document.querySelector('[href="' + link + '"]');
+    if (a) a.click();
+    localStorage.removeItem('link');
+};
+
+let ckickedLinks = document.querySelectorAll('.redirectLink');
+ckickedLinks.forEach(cl => {
+    cl.addEventListener('click', () => {
+        let link = cl.getAttribute('href').replace('index.html', '');
+        localStorage.setItem('link', link);
+    });
+});
 
 // --------------------------
 //     modal self photo

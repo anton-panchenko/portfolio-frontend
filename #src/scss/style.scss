@@ -90,12 +90,14 @@
 @import "works";
 @import "blog";
 @import "contacts";
-@import "fixed_els";
 @import "footer";
+@import "fixed_els";
+
+@import "blog_content";
+@import "post";
+@import "in_dev";
+@import "404";
 
 @import "navs";
-@import "blog_content";
-@import "404";
-@import "indev";
 
 @import "media";
