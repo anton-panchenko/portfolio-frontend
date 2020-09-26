@@ -3,7 +3,7 @@
 /*-------------------------*/
 
 .about{
-  padding: 75px 0 75px 0;
+  padding: calc(37.5px + 2.6041666666666665vw) 0 calc(37.5px + 2.6041666666666665vw) 0;
   background-color: #ffffff;
   &_content{
     display: flex;
@@ -11,16 +11,16 @@
     align-items: flex-start;
     &__item{
       width: 400px;
-      padding: 0 15px 0 15px;
+      padding: 0 calc(7.5px + 0.5208333333333334vw) 0 calc(7.5px + 0.5208333333333334vw);
     }
   }
   &_facts{
     &__title{
-      font-size: 24px;
-      line-height: 32px;
+      font-size: calc(14px + 0.6944444444444444vw);
+      line-height: calc(16px + 1.1111111111111112vw);
       font-weight: 700;
       color: #6c7988;
-      margin: 0 0 20px 0;
+      margin: 0 0 calc(10px + 0.6944444444444444vw) 0;
     }
     &__items{
       &_item{
@@ -28,13 +28,12 @@
         justify-content: space-between;
         align-items: center;
         height: 35px;
-        border-bottom: 1px solid
-          rgba(110, 110, 110, 0.1);
+        border-bottom: 1px solid rgba(110, 110, 110, 0.1);
         &__title{
           color: #6c7988;
           font-size: 14px;
           font-weight: 700;
-          line-height: 30px;
+          line-height: calc(15px + 1.0416666666666667vw);
         }
         &__content{
           font-weight: 400;
@@ -42,24 +41,24 @@
           float: right;
           color: #6c7988;
           font-size: 14px;
-          line-height: 30px;
+          line-height: calc(15px + 1.0416666666666667vw);
         }
       }
     }
   }
   &_description{
     &__title{
-      margin: 0 0 20px 0;
-      font-size: 24px;
-      line-height: 32px;
+      margin: 0 0 calc(10px + 0.6944444444444444vw) 0;
+      font-size: calc(14px + 0.6944444444444444vw);
+      line-height: calc(16px + 1.1111111111111112vw);
       font-weight: 700;
       color: #6c7988;
     }
     &__text{
       &_first{
-        font-size: 16px;
+        font-size: calc(14px + 0.1388888888888889vw);
         font-weight: 300;
-        line-height: 28px;
+        line-height: calc(14px + 0.9722222222222222vw);
         color: #6c7988;
         margin: 0 0 10px 0;
       }
@@ -67,7 +66,7 @@
         color: #6c7988;
         font-size: 14px;
         font-weight: 300;
-        line-height: 28px;
+        line-height: calc(14px + 0.9722222222222222vw);
         margin: 0 0 10px 0;
       }
     }

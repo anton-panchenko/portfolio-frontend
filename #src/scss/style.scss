@@ -36,15 +36,15 @@
     &__img{
         display: flex;
         justify-content: center;
-        margin: 0 0 30px 0;
+        margin: 0 0 calc(15px + 1.0416666666666667vw) 0;
     }
     &__text{
         text-align: center;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: calc(14px + 1.1111111111111112vw);
+        line-height: calc(15px + 1.0416666666666667vw);
         font-weight: 700;
         color: #6c7988;
-        margin: 0 0 50px 0;
+        margin: 0 0 calc(25px + 1.7361111111111112vw) 0;
     }
 }
 
@@ -52,16 +52,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 15px 15px 15px;
+    margin: calc(7.5px + 0.5208333333333334vw);
 }
 
 .btn{
-    margin: 0 15px 0 15px;
+    margin: 0 calc(7.5px + 0.5208333333333334vw) 0 calc(7.5px + 0.5208333333333334vw);
     width: 170px;
     font-size: 14px;
     font-weight: 700;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: calc(22.5px + 1.5625vw);
+    border-radius: calc(25px + 1.7361111111111112vw);
     transition: all 0.5s ease-in-out;
     text-align: center;
     border: none;

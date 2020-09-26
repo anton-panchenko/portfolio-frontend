@@ -138,5 +138,7 @@ fabric.properties
 
 .DS_store
 package-lock.json
-node_modules
-.idea
+node_modules/
+.idea/
+projects/
+docs/

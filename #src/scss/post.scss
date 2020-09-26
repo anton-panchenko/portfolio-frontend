@@ -1,13 +1,13 @@
 .post{
   background-color: #f9fafa;
-  padding: 75px 0 75px 0;
+  padding: calc(37.5px + 2.6041666666666665vw) 0 calc(37.5px + 2.6041666666666665vw) 0;
   color: #6c7988;
   &_wrap{
     width: 800px;
     margin: 0 auto;
   }
   &_header{
-    margin: 0 0 20px 0;
+    margin: 0 0 calc(10px + 0.6944444444444444vw) 0;
     &__tags{
       display: flex;
       justify-content: flex-start;
@@ -15,7 +15,7 @@
       font-size: 14px;
       font-weight: 400;
       a{
-        margin: 0 20px 0 0;
+        margin: 0 calc(10px + 0.6944444444444444vw) 0 0;
         transition: all 0.5s ease-in-out;
         &:hover{
           color: #a3c5c3;
@@ -23,9 +23,9 @@
       }
     }
     &__title{
-      height: 40px;
-      line-height: 34px;
-      font-size: 24px;
+      height: calc(20px + 1.3888888888888888vw);
+      line-height: calc(17px + 1.1805555555555556vw);
+      font-size: calc(14px + 0.6944444444444444vw);
       font-weight: 700;
       transition: all 0.5s ease-in-out;
       &:hover{
@@ -51,7 +51,7 @@
       &_date{
         font-size: 14px;
         font-weight: 700;
-        line-height: 30px;
+        line-height: calc(15px + 1.0416666666666667vw);
         transition: all 0.5s ease-in-out;
         &:hover{
           color: #a3c5c3;
@@ -61,7 +61,7 @@
         transition: all 0.5s ease-in-out 0s;
         font-size: 14px;
         font-weight: 400;
-        line-height: 30px;
+        line-height: calc(15px + 1.0416666666666667vw);
         &:hover{
           color: #a3c5c3;
         }
@@ -77,20 +77,20 @@
     }
   }
   &_body{
-    padding-bottom: 32px;
+    padding-bottom: calc(16px + 1.1111111111111112vw);
     border-bottom: 1px solid rgba(108, 121, 136, 0.2);
     &__text{
       font-size: 14px;
       font-weight: 400;
-      line-height: 26px;
+      line-height: calc(13px + 0.9027777777777778vw);
       margin: 0 0 10px;
     }
     &__quote{
       text-align: center;
-      font-size: 16px;
+      font-size: calc(14px + 0.1388888888888889vw);
       font-weight: 300;
-      line-height: 30px;
-      padding: 0 60px 30px;
+      line-height: calc(15px + 1.0416666666666667vw);
+      padding: 0 calc(30px + 2.0833333333333335vw) calc(15px + 1.0416666666666667vw);
       margin: 0 0 10px;
     }
     &__img{
@@ -107,29 +107,28 @@
       &_description{
         font-size: 14px;
         font-weight: 400;
-        line-height: 26px;
+        line-height: calc(13px + 0.9027777777777778vw);
         text-align: right;
         margin: 0 0 10px;
       }
     }
     &__subtitle{
-      font-size: 16px;
+      font-size: calc(14px + 0.1388888888888889vw);
       font-weight: 600;
-      line-height: 26px;
-      margin-top: 30px;
-      margin-bottom: 15px;
+      line-height: calc(13px + 0.9027777777777778vw);
+      margin-top: calc(15px + 1.0416666666666667vw);
+      margin-bottom: calc(7.5px + 0.5208333333333334vw);
     }
     &__list{
       padding: 0;
       margin-top: 0;
       margin-bottom: 10px;
       font-size: 14px;
-      line-height: 1.42857143;
       &_item{
-        padding: 0 0 10px 35px;
+        padding: 0 0 10px calc(17.5px + 1.2152777777777777vw);
         font-size: 14px;
         font-weight: 400;
-        line-height: 26px;
+        line-height: calc(13px + 0.9027777777777778vw);
         list-style-type: none;
         &::before{
           content: "";
@@ -146,7 +145,7 @@
     }
   }
   &_links{
-    margin-bottom: 48px;
+    margin-bottom: calc(24px + 1.6666666666666667vw);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -156,7 +155,7 @@
       align-items: center;
       font-size: 14px;
       font-weight: 700;
-      line-height: 26px;
+      line-height: calc(13px + 0.9027777777777778vw);
       padding: 5px 0;
       transition: all 0.5s ease-in-out;
       &:hover{
@@ -169,11 +168,11 @@
   }
   &_comments{
     &__title{
-      font-size: 24px;
-      line-height: 32px;
+      font-size: calc(14px + 0.6944444444444444vw);
+      line-height: calc(16px + 1.1111111111111112vw);
       font-weight: 700;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: calc(10px + 0.6944444444444444vw);
+      margin-bottom: calc(10px + 0.6944444444444444vw);
     }
     &__comment{
       &_head{
@@ -181,10 +180,10 @@
         justify-content: flex-start;
         align-items: center;
         color: #6c7988;
-        font-size: 16px;
+        font-size: calc(14px + 0.1388888888888889vw);
         font-weight: 700;
-        line-height: 26px;
-        margin-bottom: 20px;
+        line-height: calc(13px + 0.9027777777777778vw);
+        margin-bottom: calc(10px + 0.6944444444444444vw);
         margin-top: 10px;
         &__img{
           display: flex;
@@ -201,20 +200,24 @@
           margin-right: 10px;
         }
         &__username{
-          font-size: 16px;
+          font-size: calc(14px + 0.1388888888888889vw);
           margin: 0 10px 0 10px;
         }
         &__addingTime{}
         &__answerBtn{
-          margin: 0 0 0 40px;
+          margin: 0 0 0 calc(20px + 1.3888888888888888vw);
+          transition: all 0.5s ease-in-out;
+          &:hover{
+            color: #a3c5c3;
+          }
         }
       }
       &_text{
-        margin-bottom: 24px;
+        margin-bottom: calc(12px + 0.8333333333333334vw);
         color: #6c7988;
         font-size: 14px;
         font-weight: 400;
-        line-height: 26px;
+        line-height: calc(13px + 0.9027777777777778vw);
       }
     }
     &__subcomment{
@@ -223,11 +226,11 @@
   }
   &_form{
     &__title{
-      font-size: 24px;
-      line-height: 32px;
+      font-size: calc(14px + 0.6944444444444444vw);
+      line-height: calc(16px + 1.1111111111111112vw);
       font-weight: 700;
-      margin-top: 40px;
-      margin-bottom: 20px;
+      margin-top: calc(20px + 1.3888888888888888vw);
+      margin-bottom: calc(10px + 0.6944444444444444vw);
     }
     &__item{
       .input-text{
@@ -235,10 +238,10 @@
         width: 100%;
         font-size: 14px;
         font-weight: 400;
-        line-height: 30px;
-        margin-bottom: 15px;
+        line-height: calc(15px + 1.0416666666666667vw);
+        margin-bottom: calc(7.5px + 0.5208333333333334vw);
         color: #6c7988;
-        height: 30px;
+        height: calc(15px + 1.0416666666666667vw);
         outline: none;
         transition: all 0.5s ease-in-out;
         padding: 1px 2px;
@@ -254,11 +257,11 @@
         color: #6c7988;
         font-size: 14px;
         font-weight: 400;
-        line-height: 20px;
-        margin-bottom: 15px;
+        line-height: calc(10px + 0.6944444444444444vw);
+        margin-bottom: calc(7.5px + 0.5208333333333334vw);
         resize: none;
         outline: none;
-        height: 80px;
+        height: calc(40px + 2.7777777777777777vw);
         background-color: transparent;
         transition: all 0.5s ease-in-out;
         overflow: auto;

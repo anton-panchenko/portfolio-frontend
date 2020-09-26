@@ -7,9 +7,9 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  font-size: 20px;
+  font-size: calc(14px + 0.4166666666666667vw);
   position: fixed;
-  bottom: 50px;
+  bottom: calc(25px + 1.7361111111111112vw);
   right: 10px;
   display: none;
   color: #ffffff;
@@ -38,14 +38,14 @@
     width: 400px;
     height: auto;
     z-index: 1010;
-    margin: 100px auto;
+    margin: calc(50px + 3.4722222222222223vw) auto;
     position: relative;
     &__photo_closeBtn{
       position: absolute;
       color: #000000;
-      font-size: 30px;
+      font-size: calc(15px + 1.0416666666666667vw);
       top: 0;
-      right: 15px;
+      right: calc(7.5px + 0.5208333333333334vw);
       cursor: pointer;
       transition: all 0.5s ease-in-out;
       &:hover{
@@ -75,7 +75,7 @@
     color: #6c7988;
     font-size: 14px;
     font-weight: 400;
-    margin: 0 20px;
+    margin: 0 calc(10px + 0.6944444444444444vw);
     transition: all 0.5s ease-in-out;
     position: relative;
     &:hover{

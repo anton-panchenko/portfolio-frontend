@@ -16,7 +16,7 @@
     color: #6c7988;
     font-size: 14px;
     font-weight: 400;
-    margin: 0 20px;
+    margin: 0 calc(10px + 0.6944444444444444vw);
     transition: all 0.5s ease-in-out;
     position: relative;
     &:hover{
@@ -37,25 +37,3 @@
     transition: all 0.5s ease-in-out;
   }
 }
-
-//.scrollToTop{
-//  justify-content: center;
-//  align-items: center;
-//  width: 48px;
-//  height: 48px;
-//  font-size: 20px;
-//  position: fixed;
-//  bottom: 50px;
-//  right: 10px;
-//  display: none;
-//  color: #ffffff;
-//  border-radius: 50%;
-//  background-color: #d4dbdf;
-//  transition: all 0.5s ease-in-out;
-//  &:hover{
-//    background-color: #a3c5c3;
-//  }
-//  &.active{
-//    display: flex;
-//  }
-//}

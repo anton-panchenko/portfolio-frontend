@@ -1,0 +1,16 @@
+.page404{
+  background-color: #f9fafa;
+  padding: calc(50px + 3.4722222222222223vw) 0 calc(50px + 3.4722222222222223vw) 0;
+  color: #6c7988;
+  &_content{
+    text-align: center;
+    margin: 0 0 calc(50px + 3.4722222222222223vw) 0;
+    &__text{
+      font-size: calc(14px + 2.5vw);
+      font-weight: 700;
+    }
+  }
+  .section_title__text{
+    margin: calc(50px + 3.4722222222222223vw) 0 calc(25px + 1.7361111111111112vw) 0;
+  }
+}

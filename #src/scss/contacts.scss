@@ -4,21 +4,21 @@
 
 .contacts{
   background-color: #e0e6e9;
-  padding: 75px 0 75px 0;
+  padding: calc(37.5px + 2.6041666666666665vw) 0 calc(37.5px + 2.6041666666666665vw) 0;
   &_content{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     &__info{
       width: 400px;
-      padding: 0 15px 0 15px;
+      padding: 0 calc(7.5px + 0.5208333333333334vw) 0 calc(7.5px + 0.5208333333333334vw);
       &_item{
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: #6c7988;
         font-size: 14px;
-        line-height: 28px;
+        line-height: calc(14px + 0.9722222222222222vw);
         margin: 0 0 10px 0;
         &__title{
           font-weight: 700;
@@ -36,13 +36,13 @@
           justify-content: center;
           align-items: center;
           color: #f3f7f7;
-          font-size: 16px;
+          font-size: calc(14px + 0.1388888888888889vw);
           font-weight: 400;
           width: 42px;
           height: 42px;
           background-color: #a3c5c3;
           border-radius: 50%;
-          margin: 20px 10px 0 0;
+          margin: calc(10px + 0.6944444444444444vw) 10px 0 0;
           transition: all 0.5s ease-in-out;
           &:hover{
             background-color: #6c7988;
@@ -52,7 +52,7 @@
     }
     &__form{
       width: 400px;
-      padding: 0 15px 0 15px;
+      padding: 0 calc(7.5px + 0.5208333333333334vw) 0 calc(7.5px + 0.5208333333333334vw);
     }
   }
 }
@@ -72,13 +72,12 @@ textarea {
   width: 100%;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 15px;
+  line-height: calc(15px + 1.0416666666666667vw);
+  margin-bottom: calc(7.5px + 0.5208333333333334vw);
   color: #6c7988;
   height: 30px;
   border: none;
-  border-bottom: 1px solid
-    rgba(110, 110, 110, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 110, 0.1);
   background-color: transparent;
   outline: none;
   transition: all 0.5s ease-in-out;
@@ -111,16 +110,15 @@ textarea {
   color: #6c7988;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: calc(10px + 0.6944444444444444vw);
   border: none;
-  border-bottom: 1px solid
-    rgba(110, 110, 110, 0.1);
+  border-bottom: 1px solid rgba(110, 110, 110, 0.1);
   background-color: transparent;
   resize: none;
   outline: none;
-  height: 80px;
+  height: calc(40px + 2.7777777777777777vw);
   transition: all 0.5s ease-in-out;
-  margin: 0 0 30px 0;
+  margin: 0 0 calc(15px + 1.0416666666666667vw) 0;
 
   &:hover, &:focus, &:active {
     border: none;

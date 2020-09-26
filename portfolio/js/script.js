@@ -134,7 +134,7 @@ let sections = document.querySelectorAll('.section');
 let progressBars = document.querySelectorAll('.resume_content__item_progress__up');
 let isScrolled = false;
 
-setInterval(() => isScrolled = true, 60000);
+setInterval(() => isScrolled = false, 60000);
 
 window.addEventListener('scroll', () => {
 

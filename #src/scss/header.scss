@@ -4,7 +4,7 @@
 
 .header{
   background-color: #e0e6e9;
-  padding: 100px 0 100px 0;
+  padding: calc(50px + 3.4722222222222223vw) 0 calc(50px + 3.4722222222222223vw) 0;
   &_contaner{}
   &_title{
     position: relative;
@@ -12,18 +12,18 @@
     margin: 0 auto;
     &__text{
       text-align: center;
-      font-size: 40px;
-      line-height: 45px;
+      font-size: calc(14px + 1.8055555555555556vw);
+      line-height: calc(22.5px + 1.5625vw);
       color: #6c7988;
       font-weight: 700;
-      margin: 0 0 80px 0;
+      margin: 0 0 calc(40px + 2.7777777777777777vw) 0;
     }
     &__photo{
       position: absolute;
       top: 0;
       right: 0;
       color: #6c7988;
-      font-size: 20px;
+      font-size: calc(14px + 0.4166666666666667vw);
       cursor: pointer;
       transition: all 0.5s ease-in-out;
       &:hover{
@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: flex-end;
     &__item{
-      margin: 0 10px 50px 10px;
+      margin: 0 10px calc(25px + 1.7361111111111112vw) 10px;
       &_link{
         text-align: center;
         transition: all 0.5s ease-in-out;
@@ -46,13 +46,13 @@
         }
       }
       &_img{
-        margin: 0 0 15px 0;
+        margin: 0 0 calc(7.5px + 0.5208333333333334vw) 0;
       }
       &_text{
         color: #6c7988;
         font-size: 14px;
         font-weight: 300;
-        line-height: 28px;
+        line-height: calc(14px + 0.9722222222222222vw);
       }
     }
   }
@@ -64,8 +64,8 @@
       color: #6c7988;
       font-size: 14px;
       font-weight: 700;
-      line-height: 45px;
-      margin: 0 20px 0 20px;
+      line-height: calc(22.5px + 1.5625vw);
+      margin: 0 calc(10px + 0.6944444444444444vw) 0 calc(10px + 0.6944444444444444vw);
       transition: all 0.5s ease-in-out;
       &:hover{
         color: #ffffff;

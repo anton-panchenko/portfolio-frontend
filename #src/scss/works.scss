@@ -4,7 +4,7 @@
 
 .works{
   background-color: #ffffff;
-  padding: 75px 0 75px 0;
+  padding: calc(37.5px + 2.6041666666666665vw) 0 calc(37.5px + 2.6041666666666665vw) 0;
   position: relative;
   &_filter{
     display: flex;
@@ -13,9 +13,9 @@
     &__item{
       cursor: pointer;
       color: #6c7988;
-      font-size: 16px;
+      font-size: calc(14px + 0.1388888888888889vw);
       font-weight: 700;
-      line-height: 48px;
+      line-height: calc(24px + 1.6666666666666667vw);
       transition: all 0.5s ease-in-out;
       padding: 0 10px 0 10px;
       &:hover{
@@ -42,6 +42,7 @@
     transition: all 0.5s ease-in-out;
     &_wrap{
       text-align: center;
+      padding: 0 calc(15px + 1.0416666666666667vw);
     }
     &:hover{
       opacity: 0.7;
@@ -51,7 +52,7 @@
 
 #grid{
   width: 1020px;
-  margin: 20px auto 50px auto;
+  margin: calc(10px + 0.6944444444444444vw) auto calc(25px + 1.7361111111111112vw) auto;
 }
 .grid-item{
   width: 500px;

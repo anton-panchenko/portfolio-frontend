@@ -4,14 +4,14 @@
 
 .blog{
   background-color: #f9fafa;
-  padding: 75px 0 75px 0;
+  padding: calc(37.5px + 2.6041666666666665vw) 0 calc(37.5px + 2.6041666666666665vw) 0;
   &_gallery{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     &__item{
       width: 400px;
-      margin: 15px 15px 30px 15px;
+      margin: calc(7.5px + 0.5208333333333334vw) calc(7.5px + 0.5208333333333334vw) calc(15px + 1.0416666666666667vw) calc(7.5px + 0.5208333333333334vw);
       &_header{
         &__tags{
           display: flex;
@@ -21,7 +21,7 @@
           font-size: 14px;
           font-weight: 400;
           a{
-            margin: 0 20px 0 0;
+            margin: 0 calc(10px + 0.6944444444444444vw) 0 0;
             transition: all 0.5s ease-in-out;
             &:hover{
               color: #a3c5c3;
@@ -29,10 +29,10 @@
           }
         }
         &__title{
-          height: 70px;
+          height: calc(35px + 2.4305555555555554vw);
           color: #6c7988;
-          line-height: 34px;
-          font-size: 24px;
+          line-height: calc(17px + 1.1805555555555556vw);
+          font-size: calc(14px + 0.6944444444444444vw);
           font-weight: 700;
           transition: all 0.5s ease-in-out;
           &:hover{
@@ -54,13 +54,13 @@
       }
       &_footer{
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
         &__date{
           color: #6c7988;
           font-size: 14px;
           font-weight: 700;
-          line-height: 30px;
+          line-height: calc(15px + 1.0416666666666667vw);
           transition: all 0.5s ease-in-out;
           &:hover{
             color: #a3c5c3;
@@ -71,7 +71,7 @@
           transition: all 0.5s ease-in-out 0s;
           font-size: 14px;
           font-weight: 400;
-          line-height: 30px;
+          line-height: calc(15px + 1.0416666666666667vw);
           &:hover{
             color: #a3c5c3;
           }
