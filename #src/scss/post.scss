@@ -167,13 +167,66 @@
       }
     }
   }
-  &_comments{}
-  &_form{
+  &_comments{
     &__title{
       font-size: 24px;
       line-height: 32px;
       font-weight: 700;
       margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &__comment{
+      &_head{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #6c7988;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        &__img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0.64;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 400;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #e0e6e9;
+          margin-right: 10px;
+        }
+        &__username{
+          font-size: 16px;
+          margin: 0 10px 0 10px;
+        }
+        &__addingTime{}
+        &__answerBtn{
+          margin: 0 0 0 40px;
+        }
+      }
+      &_text{
+        margin-bottom: 24px;
+        color: #6c7988;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+    &__subcomment{
+      margin: 0 0 0 9%;
+    }
+  }
+  &_form{
+    &__title{
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      margin-top: 40px;
       margin-bottom: 20px;
     }
     &__item{
