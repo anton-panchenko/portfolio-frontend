@@ -16,7 +16,6 @@ setTimeout(() => {
 
 let followTheLink = function () {
     let link = localStorage.getItem('link');
-    console.log(link);
     let a = document.querySelector('[href="' + link + '"]');
     if (a) a.click();
     localStorage.removeItem('link');

@@ -7,8 +7,7 @@
   padding: calc(50px + 3.4722222222222223vw) 0 calc(50px + 3.4722222222222223vw) 0;
   &_contaner{}
   &_title{
-    position: relative;
-    width: 800px;
+    text-align: center;
     margin: 0 auto;
     &__text{
       text-align: center;
@@ -16,12 +15,11 @@
       line-height: calc(22.5px + 1.5625vw);
       color: #6c7988;
       font-weight: 700;
-      margin: 0 0 calc(40px + 2.7777777777777777vw) 0;
+      margin: 0 auto calc(40px + 2.7777777777777777vw) auto;
     }
     &__photo{
-      position: absolute;
-      top: 0;
-      right: 0;
+      width: 50px;
+      margin: 0 auto;
       color: #6c7988;
       font-size: calc(14px + 0.4166666666666667vw);
       cursor: pointer;
