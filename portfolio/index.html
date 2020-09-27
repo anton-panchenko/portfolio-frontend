@@ -154,7 +154,7 @@
         </div><!-- end about_description -->
     </div><!-- end about_content -->
     <div class="section_buttons">
-        <a href="/docs/CV_Panchenko_AV.pdf" class="btn btn-dark">Загрузить резюме</a>
+        <a href="docs/CV_Panchenko_AV.pdf" class="btn btn-dark">Загрузить резюме</a>
 <!--        <a href="#" class="btn btn-light">Напечатать резюме</a>-->
     </div><!-- end about_buttons -->
 </section><!-- end about -->
@@ -282,7 +282,7 @@
         </a>
     </div><!-- end works_filter -->
     <div class="works_gallery grid" id="grid">
-        <a href="/projects/dashboard2/index.html" class="grid-item dashboard">
+        <a href="projects/dashboard2/index.html" class="grid-item dashboard">
             <img src="img/png/admin_dashboard_2.png" alt="project_link">
             <div class="works_gallery__hover_content">
                 <div class="works_gallery__hover_content_wrap">
@@ -295,7 +295,7 @@
                 </div>
             </div>
         </a><!-- end grid-item -->
-        <a href="/projects/crios/index.html" class="grid-item landing">
+        <a href="projects/crios/index.html" class="grid-item landing">
             <img src="img/png/crios.png" alt="project_link">
             <div class="works_gallery__hover_content">
                 <div class="works_gallery__hover_content_wrap">
@@ -308,7 +308,7 @@
                 </div>
             </div>
         </a><!-- end grid-item -->
-        <a href="/projects/csscalc/index.html" class="grid-item program">
+        <a href="projects/csscalc/index.html" class="grid-item program">
             <img src="img/png/css_calc.png" alt="project_link">
             <div class="works_gallery__hover_content">
                 <div class="works_gallery__hover_content_wrap">
@@ -321,7 +321,7 @@
                 </div>
             </div>
         </a><!-- end grid-item -->
-        <a href="/projects/dashboard1/index.html" class="grid-item dashboard">
+        <a href="projects/dashboard1/index.html" class="grid-item dashboard">
             <img src="img/png/admin_dashboard_1.png" alt="project_link">
             <div class="works_gallery__hover_content">
                 <div class="works_gallery__hover_content_wrap">
@@ -450,11 +450,11 @@
             </div><!-- end contacts_content__info_socials -->
         </div><!-- end contacts_content__info -->
         <div class="contacts_content__form">
-            <form action="/" method="post">
-                <input type="text" name="name" class="input-text" placeholder="Имя">
-                <input type="text" name="email" class="input-text" placeholder="Email">
-                <input type="text" name="subject" class="input-text" placeholder="Тема">
-                <textarea name="message" class="input-textarea" placeholder="Сообщение"></textarea><br>
+            <form action="sendMail.php" method="post">
+                <input type="text" name="name" class="input-text" placeholder="Имя" required>
+                <input type="text" name="email" class="input-text" placeholder="Email" required>
+                <input type="text" name="subject" class="input-text" placeholder="Тема" required>
+                <textarea name="message" class="input-textarea" placeholder="Сообщение" required></textarea><br>
                 <input type="submit" class="btn btn-dark" value="Отправить">
             </form>
         </div><!-- end contacts_content__form -->
